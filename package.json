@@ -1,0 +1,28 @@
+{
+  "name": "using-mongodb",
+  "version": "1.0.0",
+  "description": "Using MongoDB to Store API Data",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.3",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/osu-cs493-sp22/using-mongodb.git"
+  },
+  "author": "Hess <hessro@oregonstate.edu>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/osu-cs493-sp22/using-mongodb/issues"
+  },
+  "homepage": "https://github.com/osu-cs493-sp22/using-mongodb#readme"
+}
