@@ -11,5 +11,4 @@ const LodgingSchema = {
     price: { required: true },
     ownerid: { required: true }
 }
-
 exports.LodgingSchema = LodgingSchema

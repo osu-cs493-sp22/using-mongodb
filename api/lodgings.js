@@ -1,5 +1,4 @@
 const { Router } = require('express')
-
 const router = Router()
 
 router.get('/', function (req, res, next) {
@@ -23,6 +22,11 @@ router.patch('/:id', function (req, res, next) {
 router.delete('/:id', function (req, res, next) {
     const id = req.params.id
     res.status(204).send()
+})
+
+router.get('/:id/reservations', function (req, res, next) {
+    const id = req.params.id
+    res.status(200).send({})
 })
 
 module.exports = router
