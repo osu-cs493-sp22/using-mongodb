@@ -24,9 +24,4 @@ router.delete('/:id', function (req, res, next) {
     res.status(204).send()
 })
 
-router.get('/:id/reservations', function (req, res, next) {
-    const id = req.params.id
-    res.status(200).send({})
-})
-
 module.exports = router
