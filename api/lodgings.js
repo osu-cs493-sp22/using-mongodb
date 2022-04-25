@@ -31,7 +31,11 @@ router.post('/', async function (req, res, next) {
 router.get('/:id', async function (req, res, next) {
     const id = req.params.id
     const lodging = await getLodgingById(id)
-    res.status(200).send(lodging)
+    if (lodging) {
+        res.status(200).send(lodging)
+    } else {
+        next()
+    }
 })
 
 router.patch('/:id', function (req, res, next) {
